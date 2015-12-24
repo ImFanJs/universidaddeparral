@@ -1,0 +1,15 @@
+%header.container-fluid
+	.col-lg-4.logo
+		=link_to (image_tag 'logo2.png'), root_path
+	%nav.col-sm-10.col-sm-offset-1.col-lg-6.col-lg-offset-2.small-margin
+		%ul.nav.nav-pills.pull-right
+			%li{:class => "presentacion #{'active' if current_page?(root_path)}"}=link_to "Inicio", root_path
+			%li.presentacion
+				=link_to "Quienes Somos", root_path
+			%li.presentacion
+				=link_to "Carreras", root_path
+			%li.presentacion
+				=link_to "Maestrias", root_path
+			%li.presentacion
+				=link_to "Inscripciones", root_path
+			%li{:class => "presentacion #{'active' if current_page?(welcome_contacto_path)}"}=link_to "Contacto", welcome_contacto_path

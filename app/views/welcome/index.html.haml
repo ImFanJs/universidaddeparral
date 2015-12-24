@@ -1,0 +1,43 @@
+.slider
+	%ul
+		%li= image_tag "edificio.jpg"
+		%li= image_tag "graduacion.jpg"
+		%li= image_tag "uni.jpg"
+.container-fluid
+	.col-md-12.top-padding.bottom-padding
+		%h1.text-center.green-text Bienvenidos a UDP
+	.col-sm-6.col-lg-4.text-center.border
+		%h3.gray-text Carreras
+		.circle.bg-green.center-block.small-margin=image_tag "lic.png"
+		%p.top-padding=link_to "Conoce nuestras Carreras"
+	.col-sm-6.col-lg-4.text-center.border
+		%h3.gray-text Maestrías
+		.circle.bg-green.center-block.small-margin=link_to image_tag "maestrias.png"
+		%p.top-padding=link_to "Conoce nuestras Maestrías"
+	.col-sm-6.col-lg-4.text-center.border
+		%h3.gray-text Campus
+		.circle.bg-green.center-block.small-margin=image_tag "campus.png"
+		%p.top-padding=link_to "Conoce nuestro Campus"
+	.col-sm-6.col-lg-4.text-center.border
+		%h3.gray-text Inscripciones
+		.circle.bg-green.center-block.small-margin=image_tag "inscripcion.png"
+		%p.top-padding=link_to "Conoce los requisitos de Inscripción"
+	.col-sm-6.col-lg-4.text-center.border
+		%h3.gray-text Becas
+		.circle.bg-green.center-block.small-margin=image_tag "becas.png"
+		%p.top-padding=link_to "Conoce nuestras Becas"
+	.col-sm-6.col-lg-4.text-center.border
+		%h3.gray-text Servicio Social
+		.circle.bg-green.center-block.small-margin=image_tag "social.png"
+		%p.top-padding=link_to "Realiza tu servicio social"
+	.col-md-12.top-padding.bottom-padding
+		%h1.text-center.green-text Soy UDP
+	.col-md-12.imagen.bottom-padding
+		.no-space.col-sm-6.col-md-3=link_to image_tag "educacion.jpg", title: "Licenciado en Educacion"
+		.no-space.col-sm-6.col-md-3=image_tag "arte.jpg", title: "Licenciado en Artes"
+		.no-space.col-sm-6.col-md-3=image_tag "derecho.jpg", title: "Licenciado en Derecho"
+		.no-space.col-sm-6.col-md-3=image_tag "uni.jpg", title: "Licenciado en Arquitectura"
+		.no-space.col-sm-6.col-md-3=image_tag "forense.jpg", title: "Licenciado en Ciencias Forenses"
+		.no-space.col-sm-6.col-md-3=image_tag "edificio.jpg", title: "Licenciado en Educacion"
+		.no-space.col-sm-6.col-md-3=image_tag "social.jpg", title: "Licenciado en Trabajo Social"
+		.no-space.col-sm-6.col-md-3=image_tag "licenciaturas.jpg", title: "Licenciado en R.H"

@@ -1,0 +1,165 @@
+@import "bootstrap";
+
+.slider {
+    width: 100%;
+    height: 600px;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: 600px;
+}
+
+.slider ul {
+    width: 300%;
+    padding: 0;
+    display: flex;
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: step-start;
+    -moz-animation: cambio 20s infinite alternate;
+    -moz-animation-timing-function: step-start;
+    -webkit-animation: cambio 20s infinite alternate;
+    -webkit-animation-timing-function: step-start;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0;}
+    30% { margin-left: 0;}
+    
+    35% { margin-left: -100%;}
+    65% { margin-left: -100%;}
+    
+    70% { margin-left: -200%;}
+    100% { margin-left: -200%;}
+}
+
+@-moz-keyframes cambio {
+    0% { margin-left: 0;}
+    30% { margin-left: 0;}
+    
+    35% { margin-left: -100%;}
+    65% { margin-left: -100%;}
+    
+    70% { margin-left: -200%;}
+    100% { margin-left: -200%;}
+}
+
+@-webkit-keyframes cambio {
+    0% { margin-left: 0;}
+    30% { margin-left: 0;}
+    
+    35% { margin-left: -100%;}
+    65% { margin-left: -100%;}
+    
+    70% { margin-left: -200%;}
+    100% { margin-left: -200%;}
+}
+
+/* Colores */
+.white-text {
+    color: #FFFFFF;
+}
+.bg-white {
+    background-color: #FFFFFF;
+}
+.black-text {
+    color: #000;
+}
+.bg-black {
+    background-color: #000;
+}
+.green-text {
+    color: #009688;
+}
+.bg-green {
+    background-color: #009688;
+}
+.gray-text {
+    color: #949494;
+}
+.bg-gray {
+    background-color: #949494;
+}
+
+/* Tamaño de letras */
+@font-face {
+    font-family: helvetica;
+}
+
+.p {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 4em;
+}
+h2 {
+    font-size: 3em;
+}
+h3 {
+    font-size: 2.5em;
+}
+h4 {
+    font-size: 1em;
+}
+
+/* Paddings */
+.bottom-padding {
+    padding-bottom: 2em;
+}
+.top-padding {
+    padding-top: 2em;
+}
+
+/* Margenes */
+.no-space {
+    margin: 0;
+    padding: 0;
+}
+.small-margin {
+    margin-top: 20px;
+}
+.top-margin {
+    margin-top: 2em;
+}
+.bottom-margin {
+    margin-bottom: 1em;
+}
+
+/* Bordes */
+.border {
+    border: 2px solid #fff;
+}
+.border-bottom {
+    border-bottom: 2px solid #fff;
+}
+
+/* Alineación */
+.circle {
+    width: 37%;
+    border-radius: 50%;
+}
+.presentacion a:hover {
+    border-bottom: 3px solid #337AB7;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+}
+
+.logo img {
+    width: 100%;
+}
+.imagen img {
+    width: 100%;
+    height: 200px;
+}

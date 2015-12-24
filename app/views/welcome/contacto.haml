@@ -1,0 +1,16 @@
+.slider
+  %ul
+    %li= image_tag "edificio.jpg"
+    %li= image_tag "graduacion.jpg"
+    %li= image_tag "uni.jpg"
+.container-fluid
+  .row.col-md-8.col-md-offset-2.small-margin
+    .panel.panel-primary
+      .panel-heading Contactanos
+      .panel-body
+        =form_tag(method: :post) do
+          =text_field_tag "name",nil,class:"col-md-8 col-md-offset-2 small-margin", placeholder:"Nombre"
+          =email_field_tag "email",nil,class:"col-md-8 col-md-offset-2 small-margin", placeholder:"Email"
+          =number_field_tag "tel",nil,class:"col-md-8 col-md-offset-2 small-margin", placeholder:"Teléfono"
+      .panel.panel-primary
+      .panel-footer Todos tus datos esta protegidos
