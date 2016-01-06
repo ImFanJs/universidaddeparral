@@ -5,11 +5,9 @@
 		%ul.nav.nav-pills.pull-right
 			%li{:class => "presentacion #{'active' if current_page?(root_path)}"}=link_to "Inicio", root_path
 			%li.presentacion
-				=link_to "Quienes Somos", root_path
-			%li.presentacion
 				=link_to "Carreras", root_path
 			%li.presentacion
 				=link_to "Maestrias", root_path
 			%li.presentacion
-				=link_to "Inscripciones", root_path
+				=link_to "Servicios en Linea", root_path
 			%li{:class => "presentacion #{'active' if current_page?(welcome_contacto_path)}"}=link_to "Contacto", welcome_contacto_path
