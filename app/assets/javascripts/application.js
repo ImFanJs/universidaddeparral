@@ -16,3 +16,21 @@
 //= require bootstrap
 //= require bootstrap-material-design
 //= require_tree .
+
+window.onLoad = function(callback) {
+
+	$(document).ready(callback);
+	$(document).on('page:load', callback);
+};
+
+onLoad(function(){
+
+	$('#oculto').hide()
+
+    $('#boton').click(function(){
+
+    	$('#oculto').slideToggle('slow');
+
+    });
+
+});
