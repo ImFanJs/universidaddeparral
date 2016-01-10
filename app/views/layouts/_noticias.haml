@@ -21,10 +21,10 @@
 						%button{ "type" => "button", :class => "btn btn-primary btn-sm", "data-dismiss" => "modal"} Close
 	.col-md-4.col-sm-6.border
 		%h4.text-center.gray-text Apoyando la zona rural.
-		.imagen.padding-sm.puntero=image_tag "social.jpg", { "data-toggle" => "modal", "data-target" => "#myModal" }
+		.imagen.padding-sm.puntero=image_tag "educacion.jpg", { "data-toggle" => "modal", "data-target" => "#myModal1" }
 		%p.padding-sm Algunos de nuestros estudiantes, se reunieron para apoyar en zonas rurales, donde más necesitan.
-		%button{ "type" => "button", "class" => "btn btn-primary btn-sm", "data-toggle" => "modal", "data-target" => "#myModal" } Leer Más
-		.modal.fade#myModal{ "tabindex" => "-1", "role" => "dialog", "aria-labelledby" => "myModalLabel" }
+		%button{ "type" => "button", "class" => "btn btn-primary btn-sm", "data-toggle" => "modal", "data-target" => "#myModal1" } Leer Más
+		.modal.fade#myModal1{ "tabindex" => "-1", "role" => "dialog", "aria-labelledby" => "myModalLabel" }
 			.modal-dialog{ "role" => "document" }
 				.modal-content
 					.modal-header.bg-green
@@ -32,7 +32,7 @@
 							%span{ "aria-hidden" => "true"} &times;
 						%h4.text-center.white-text.bottom-padding-xs#myModalLabel Apoyando la zona rural
 					.modal-body.bg-success
-						.imagen.padding-sm=image_tag "social.jpg"
+						.imagen.padding-sm=image_tag "educacion.jpg"
 						%p.padding-sm Algunos de nuestros estudiantes, se reunieron para apoyar en zonas rurales, donde más necesitan. Estuvieron repartiendo cobertores para este tiempo de frio, ya que hay zonas donde la temperatura baja hasta los -10 grados centigrados. Algunos de nuestros estudiantes, se reunieron para apoyar en zonas rurales, donde más necesitan. Estuvieron repartiendo cobertores para este tiempo de frio, ya que hay zonas donde la temperatura baja hasta los -10 grados centigrados.
 					.modal-footer
 						%br
