@@ -10,35 +10,35 @@
     %h1.text-center.green-text Bienvenidos a UDP
   .col-sm-6.col-lg-4.text-center.border
     %h3.gray-text Carreras
-    .opaco.circle.bg-green.center-block.small-margin=image_tag "lic.png"
-    %p.top-padding=link_to "Conoce nuestras Carreras"
+    .opaco.circle.bg-green.center-block.small-margin=link_to (image_tag "lic.png"), welcome_carreras_path
+    %p.top-padding=link_to "Conoce nuestras Carreras", welcome_carreras_path
   .col-sm-6.col-lg-4.text-center.border
     %h3.gray-text Maestrías
-    .circle.bg-green.center-block.small-margin=image_tag "maestrias.png"
-    %p.top-padding=link_to "Conoce nuestras Maestrías"
+    .circle.bg-green.center-block.small-margin=link_to (image_tag "maestrias.png"), welcome_carreras_path
+    %p.top-padding=link_to "Conoce nuestras Maestrías", welcome_carreras_path
   .col-sm-6.col-lg-4.text-center.border
     %h3.gray-text Campus
-    .circle.bg-green.center-block.small-margin=image_tag "campus.png"
+    .circle.bg-green.center-block.small-margin=link_to (image_tag "campus.png"), welcome_quienes_somos_path
     %p.top-padding=link_to "Conoce nuestro Campus", welcome_quienes_somos_path
   .col-sm-6.col-lg-4.text-center.border
     %h3.gray-text Inscripciones
-    .circle.bg-green.center-block.small-margin=image_tag "inscripcion.png"
-    %p.top-padding=link_to "Conoce los requisitos de Inscripción"
+    .circle.bg-green.center-block.small-margin=link_to (image_tag "inscripcion.png"), welcome_servicios_path
+    %p.top-padding=link_to "Conoce los requisitos de Inscripción", welcome_servicios_path
   .col-sm-6.col-lg-4.text-center.border
     %h3.gray-text Becas
-    .circle.bg-green.center-block.small-margin=image_tag "becas.png"
-    %p.top-padding=link_to "Conoce nuestras Becas"
+    .circle.bg-green.center-block.small-margin=link_to (image_tag "becas.png"), welcome_servicios_path
+    %p.top-padding=link_to "Conoce nuestras Becas", welcome_servicios_path
   .col-sm-6.col-lg-4.text-center.border
     %h3.gray-text Servicio Social
-    .circle.bg-green.center-block.small-margin=image_tag "social.png"
-    %p.top-padding=link_to "Realiza tu servicio social"
+    .circle.bg-green.center-block.small-margin=link_to (image_tag "social.png"), welcome_servicios_path
+    %p.top-padding=link_to "Realiza tu servicio social", welcome_servicios_path
 .container
   .col-md-12.top-padding.bottom-padding.top-margin-md
     %h2.text-center.text-info Noticias Recientes
     - @posts.each do |post|
-      .col-md-4.col-sm-6.border
+      .col-md-4.col-sm-6.border.small-margin
         %h4.text-center.gray-text= post.title
-        .imagen.padding-sm.puntero=image_tag post.image
+        .imagen.padding-sm.puntero{ "data-toggle" => "modal", "data-target" => "#miModal#{post.id}" }=image_tag post.image
         %p.padding-sm= post.description[0..140] + "..."
         %button{ "type" => "button", "class" => "btn btn-primary btn-sm", "data-toggle" => "modal", "data-target" => "#miModal#{post.id}" } Leer Más
         .modal.fade{ "id" => "miModal#{post.id}", "tabindex" => "-1", "role" => "dialog", "aria-labelledby" => "myModalLabel" }
@@ -59,12 +59,4 @@
           %p= link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
   - if usuario_signed_in?
     %p.pull-right= link_to '+ Agregar Post', new_post_path
-.col-md-12.imagen.bottom-padding.top-margin-md
-  .no-space.col-sm-6.col-md-3=link_to image_tag "educacion.jpg", title: "Licenciado en Educacion"
-  .no-space.col-sm-6.col-md-3=image_tag "arte.jpg", title: "Licenciado en Artes"
-  .no-space.col-sm-6.col-md-3=image_tag "derecho.jpg", title: "Licenciado en Derecho"
-  .no-space.col-sm-6.col-md-3=image_tag "uni.jpg", title: "Licenciado en Arquitectura"
-  .no-space.col-sm-6.col-md-3=image_tag "forense.jpg", title: "Licenciado en Ciencias Forenses"
-  .no-space.col-sm-6.col-md-3=image_tag "edificio.jpg", title: "Licenciado en Educacion"
-  .no-space.col-sm-6.col-md-3=image_tag "social.jpg", title: "Licenciado en Trabajo Social"
-  .no-space.col-sm-6.col-md-3=image_tag "licenciaturas.jpg", title: "Licenciado en R.H"
+= render 'layouts/nosotros'

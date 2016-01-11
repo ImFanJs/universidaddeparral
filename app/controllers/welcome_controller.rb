@@ -20,6 +20,6 @@ class WelcomeController < ApplicationController
   end
 
   def correo
-  	Email.recepcion(params).deliver
+  	Devise.email.deliver
   end
 end

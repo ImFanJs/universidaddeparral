@@ -3,7 +3,7 @@
     .panel.panel-primary
       .panel-heading.text-center#boton Contáctanos
       .panel-body#oculto
-        =form_tag(method: :post) do
+        =form_tag(controller: "welcome", action: "correo", method: "post") do
           =text_field_tag "name",nil,class:"col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 small-margin", placeholder:"Nombre"
           =email_field_tag "email",nil,class:"col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 small-margin", placeholder:"Email"
           =number_field_tag "tel",nil,class:"col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 small-margin", placeholder:"Teléfono"

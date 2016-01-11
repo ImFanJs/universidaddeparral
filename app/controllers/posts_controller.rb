@@ -5,9 +5,6 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @title = "Inicio | UDP"
-    @cont = 1
-    @cont = @cont + 1
-    @modal = "myModal" + @cont.to_s
     @posts = Post.order('updated_at DESC').limit(6)
   end
 

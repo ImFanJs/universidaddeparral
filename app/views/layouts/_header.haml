@@ -10,7 +10,8 @@
 					%span.icon-bar.black-text
 					%span.icon-bar.black-text
 			.collapse.navbar-collapse#bs-example-navbar-collapse-1
-				%ul.nav.navbar-nav.black-text.pull-right
+				.col-md-2
+				%ul.nav.navbar-nav.black-text.col-md-10
 					%li{:class => "presentacion #{'activa' if current_page?(root_path)}"}=link_to "Inicio", root_path
 					- if usuario_signed_in?
 						%li.presentacion
