@@ -38,7 +38,7 @@
     - @posts.each do |post|
       .col-md-4.col-sm-6.border.small-margin
         %h4.text-center.gray-text= post.title
-        .imagen.padding-sm.puntero{ "data-toggle" => "modal", "data-target" => "#miModal#{post.id}" }=image_tag post.image
+        .imagen.padding-sm.puntero{ "data-toggle" => "modal", "data-target" => "#miModal#{post.id}" }=image_tag post.avatar.url
         %p.padding-sm= post.description[0..140] + "..."
         %button{ "type" => "button", "class" => "btn btn-primary btn-sm", "data-toggle" => "modal", "data-target" => "#miModal#{post.id}" } Leer Más
         .modal.fade{ "id" => "miModal#{post.id}", "tabindex" => "-1", "role" => "dialog", "aria-labelledby" => "myModalLabel" }
@@ -49,7 +49,7 @@
                   %span{ "aria-hidden" => "true"} &times;
                 %h4.text-center.white-text.bottom-padding-xs#myModalLabel= post.title
               .modal-body.bg-success
-                .imagen.padding-sm=image_tag post.image
+                .imagen.padding-sm=image_tag post.avatar.url
                 %p.padding-sm= post.description
               .modal-footer
                 %br

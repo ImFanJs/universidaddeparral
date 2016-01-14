@@ -12,11 +12,11 @@ group :production do
 	gem 'pg'
 end
 
+# Gema para subir imagenes
+gem "paperclip", "~> 4.3"
+
 # Devise para autentificacion
 gem "devise"
-
-#Maps for Rails
-gem 'gmaps4rails'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
