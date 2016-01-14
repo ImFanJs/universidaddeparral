@@ -1,11 +1,9 @@
-%p#notice= notice
-
 %p
   %b Title:
   = @post.title
 %p
   %b Image:
-  = @post.image
+  = image_tag @post.photo_path
 %p
   %b Description:
   = @post.description

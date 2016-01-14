@@ -14,8 +14,7 @@
 				%ul.nav.navbar-nav.black-text.col-md-10
 					%li{:class => "presentacion #{'activa' if current_page?(root_path)}"}=link_to "Inicio", root_path
 					- if usuario_signed_in?
-						%li.presentacion
-							=link_to "Sistema", root_path
+						%li.presentacion=link_to "Editar Perfil", edit_usuario_registration_path
 						%li.presentacion=link_to "Salir", destroy_usuario_session_path, :method => :delete
 					- else
 						%li{:class => "presentacion #{'activa' if current_page?(welcome_quienes_somos_path)}"}=link_to "Quienes Somos", welcome_quienes_somos_path

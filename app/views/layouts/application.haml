@@ -7,9 +7,10 @@
 		= csrf_meta_tags
 	
 	%body
-		%div
-			.alert.alert-success.notice{style:" #{"display:none" if notice.nil?}"}= notice
-			.alert.alert-danger{style:" #{"display:none" if alert.nil? }"}= alert
+		- if notice
+			%p.alert.alert-success= notice
+		- if alert
+			%p.alert.alert-danger= alert
 		= render 'layouts/header'
 		= yield
 		= render 'layouts/footer'
