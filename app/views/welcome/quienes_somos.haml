@@ -1,31 +1,26 @@
-= render 'layouts/nosotros'
-.container-fluid.border-top
-	.container-fluid
-		.col-md-12
-			%h2.green-text.text-center ¿Quienes Somos?
-	.container
-		.col-md-12.top-margin
-			.col-md-6.text-center.border
-				%h3.text-center.top-margin Misión
-				=image_tag "lic.png"
-				%p.col-md-8.col-md-offset-2.text-justify.top-margin.bottom-padding-xs Otorgar espacios a cualquiera que desee obtener una formación profesional para contribuir a un cambio cognitivo y pragmático del conocimiento, logrando así un impulso en el mejoramiento social.
-			.col-md-6.text-center.border
-				%h3.text-center.top-margin Visión
-				=image_tag "campus.png"
-				%p.col-md-8.col-md-offset-2.text-justify.top-margin Generadora y exportadora internacional de personas capacitadas y dominantes del conocimiento analítico en áreas de aplicación des mismo, tanto humana como profesionalmente, dejando huella encada parte de la calidad de la formación.
-			.col-md-6.text-center.border
-				%h3.text-center.top-margin Filosofía
-				=image_tag "social.png"
-				%p.col-md-8.col-md-offset-2.text-justify.top-margin Veracidad: para actuar con certeza 
-				%p.col-md-8.col-md-offset-2.text-justify Libertad: para auto determinarse límites 
-				%p.col-md-8.col-md-offset-2.text-justify Integridad: para ser ejemplo a seguir
-				%p.col-md-8.col-md-offset-2.text-justify Responsabilidad: para entender la obligación en el actuar social 
-				%p.col-md-8.col-md-offset-2.text-justify Entrega: para darlo todo por lo que se ama y se hace con pasión
-			.col-md-6.text-center.border
-				%h3.text-center.top-margin Valores
-				=image_tag "social.png"
-				%p.col-md-8.col-md-offset-2.text-justify.top-margin Veracidad: para actuar con certeza 
-				%p.col-md-8.col-md-offset-2.text-justify Libertad: para auto determinarse límites 
-				%p.col-md-8.col-md-offset-2.text-justify Integridad: para ser ejemplo a seguir
-				%p.col-md-8.col-md-offset-2.text-justify Responsabilidad: para entender la obligación en el actuar social 
-				%p.col-md-8.col-md-offset-2.text-justify Entrega: para darlo todo por lo que se ama y se hace con pasión
+.container-fluid
+	.col-md-12.top-margin.bottom-margin-md
+		%h2.green-text.text-center ¿Quienes Somos?
+	= render 'layouts/nosotros'
+.container.top-margin
+	.col-md-12.top-margin
+		.col-md-6.text-center.border
+			%h3.text-center.top-margin.gray-text Campus
+			.circle.bg-green.center-block.small-margin.padding-xs=image_tag "campus.png"
+			%p.col-md-10.col-md-offset-1.top-margin Somos una institución educativa joven, pero con la suficiente experiencia y capacidad de nuestros docentes y personal administrativo, quienes cuentan con pasión, empeño y dedicación.
+		.col-md-6.text-center.border
+			%h3.text-center.top-margin.gray-text Misión
+			.circle.bg-green.center-block.small-margin.padding-xs=image_tag "lic.png"
+			%p.col-md-10.col-md-offset-1.top-margin Otorgar espacios a cualquiera que desee obtener una formación profesional para contribuir a un cambio cognitivo y pragmático del conocimiento, logrando así un impulso en el mejoramiento social.
+		.col-md-6.text-center.border.bottom-padding-md
+			%h3.text-center.top-margin.gray-text Visión
+			.circle.bg-green.center-block.small-margin.padding-xs=image_tag "campus.png"
+			%p.col-md-10.col-md-offset-1.top-margin Generadora y exportadora internacional de personas capacitadas y dominantes del conocimiento analítico en áreas de aplicación del mismo, tanto humana como profesionalmente, dejando huella en cada parte de la calidad de la formación.
+		.col-md-6.text-center.border
+			%h3.text-center.top-margin.gray-text Filosofía
+			.circle.bg-green.center-block.small-margin.padding-xs=image_tag "social.png"
+			%p.col-md-10.text-justify.col-md-offset-1.top-margin Veracidad: para actuar con certeza 
+			%p.col-md-10.text-justify.col-md-offset-1 Libertad: para auto determinarse límites 
+			%p.col-md-10.text-justify.col-md-offset-1 Integridad: para ser ejemplo a seguir
+			%p.col-md-10.text-justify.col-md-offset-1 Responsabilidad: para entender la obligación en el actuar social 
+			%p.col-md-10.text-justify.col-md-offset-1 Entrega: para darlo todo por lo que se ama y se hace con pasión

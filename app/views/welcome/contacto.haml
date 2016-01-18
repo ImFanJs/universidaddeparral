@@ -1,17 +1,15 @@
 .container-fluid.border-top
-	.container-fluid
-		.col-md-12.text-center.cover.top-margin-md
-			%ul.list-unstyled
-				%li.img-thumbnail= image_tag "mapa_udp.png"
-		.col-md-12
-			%h2.green-text.text-center Contacto
-	.container
-		.col-md-10.col-md-offset-1.top-margin
-			.panel.panel-primary
-				.panel-heading.text-center Envíanos tus datos para comenzar tu registro.
-				.panel-body.bg-info
-					=form_tag(controller: "welcome", action: "correo", method: "post") do
-						=text_field_tag "name",nil,class:"col-md-8 col-md-offset-2 form-group", placeholder:"Nombre"
-						=number_field_tag "tel",nil,class:"col-md-8 col-md-offset-2 form-group", placeholder:"Teléfono"
-						=email_field_tag "email",nil,class:"col-md-8 col-md-offset-2 form-group", placeholder:"Correo"
-						=submit_tag "Enviar",class:"col-md-2 col-md-offset-5 form-group"
+	.col-md-12.text-center.cover.top-margin-md
+		%ul.list-unstyled
+			%li.img-thumbnail= image_tag "mapa_udp.png"
+	.col-md-12
+		%h2.green-text.text-center Contacto
+	.col-md-8.col-md-offset-2.top-margin
+		.panel.panel-primary
+			.panel-heading.text-center Envíanos tus datos para comenzar tu registro.
+			.panel-body.bg-info
+				=form_tag(controller: "welcome", action: "correo", method: "post") do
+					=text_field_tag "name",nil,class:"col-md-8 col-md-offset-2 form-group", placeholder:"Nombre"
+					=number_field_tag "tel",nil,class:"col-md-8 col-md-offset-2 form-group", placeholder:"Teléfono"
+					=email_field_tag "email",nil,class:"col-md-8 col-md-offset-2 form-group", placeholder:"Correo"
+					=submit_tag "Enviar",class:"col-md-2 col-md-offset-5 form-group"
