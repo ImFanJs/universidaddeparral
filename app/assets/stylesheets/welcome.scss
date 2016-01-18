@@ -96,6 +96,9 @@
 .suc-text {
     color: #4CAF50;
 }
+.transparente {
+    background-color: transparent !important;
+}
 
 /* Tamaño de letras */
 @font-face {
@@ -103,7 +106,7 @@
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
 }
 
