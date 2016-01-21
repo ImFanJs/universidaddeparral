@@ -99,6 +99,12 @@
 .transparente {
     background-color: transparent !important;
 }
+.orange-text {
+    color: orange;
+}
+.bg-orange {
+    background-color: orange;
+}
 
 /* Tamaño de letras */
 @font-face {
@@ -173,6 +179,9 @@ h4 {
 /* Bordes */
 .border {
     border: 2px solid #fff;
+}
+.border-black {
+    border: 2px solid #000;
 }
 .border-bottom {
     border-bottom: 2px solid #fff;
