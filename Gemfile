@@ -5,10 +5,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5'
 
 group :production do
+	gem 'pg'
 	gem 'rails_12factor'
 end
-
-gem 'sqlite3'
 
 # Gema para subir imagenes
 gem "paperclip", "~> 4.3"
@@ -55,6 +54,7 @@ gem 'bootstrap-material-design'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'sqlite3'
 end
 
 group :development do
