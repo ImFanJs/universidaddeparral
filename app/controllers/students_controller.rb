@@ -5,21 +5,25 @@ class StudentsController < ApplicationController
   # GET /students
   # GET /students.json
   def index
+    @title = "Alumnos"
     @students = Student.all
   end
 
   # GET /students/1
   # GET /students/1.json
   def show
+    @title = "Mostrar Registro"
   end
 
   # GET /students/new
   def new
+    @title = "Nuevo Registro"
     @student = Student.new
   end
 
   # GET /students/1/edit
   def edit
+    @title = "Editar Registro"
   end
 
   # POST /students
@@ -29,7 +33,7 @@ class StudentsController < ApplicationController
 
     respond_to do |format|
       if @student.save
-        format.html { redirect_to @student, notice: 'Student was successfully created.' }
+        format.html { redirect_to @student, notice: 'Registro creado satisfactoriamente.' }
         format.json { render :show, status: :created, location: @student }
       else
         format.html { render :new }
@@ -43,7 +47,7 @@ class StudentsController < ApplicationController
   def update
     respond_to do |format|
       if @student.update(student_params)
-        format.html { redirect_to @student, notice: 'Student was successfully updated.' }
+        format.html { redirect_to @student, notice: 'Registro actualizado.' }
         format.json { render :show, status: :ok, location: @student }
       else
         format.html { render :edit }
@@ -57,7 +61,7 @@ class StudentsController < ApplicationController
   def destroy
     @student.destroy
     respond_to do |format|
-      format.html { redirect_to students_url, notice: 'Student was successfully destroyed.' }
+      format.html { redirect_to students_url, notice: 'Registro eliminado satisfactoriamente.' }
       format.json { head :no_content }
     end
   end

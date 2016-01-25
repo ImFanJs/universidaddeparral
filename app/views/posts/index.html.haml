@@ -10,23 +10,23 @@
     %h1.text-center.green-text Bienvenidos a UDP
   .col-sm-6.col-lg-4.text-center.border
     %h3.gray-text Carreras
-    .circle.bg-green.center-block.small-margin.padding-xs=link_to (image_tag "lic.png", width: 100)
+    .circle.bg-blue.center-block.small-margin.padding-xs=link_to (image_tag "lic.png", width: 100)
     %p.top-padding=link_to "Conoce nuestras Carreras"
   .col-sm-6.col-lg-4.text-center.border
     %h3.gray-text Maestrías
-    .circle.bg-green.center-block.small-margin.padding-xs=link_to (image_tag "maestrias.png", width: 100)
+    .circle.bg-navy.center-block.small-margin.padding-xs=link_to (image_tag "maestrias.png", width: 100)
     %p.top-padding=link_to "Conoce nuestras Maestrías"
   .col-sm-6.col-lg-4.text-center.border
     %h3.gray-text Campus
-    .circle.bg-green.center-block.small-margin.padding-xs=link_to (image_tag "campus.png", width: 100), welcome_quienes_somos_path
+    .circle.bg-l-blue.center-block.small-margin.padding-xs=link_to (image_tag "campus.png", width: 100), welcome_quienes_somos_path
     %p.top-padding=link_to "Conoce nuestro Campus", welcome_quienes_somos_path
   .col-sm-6.col-lg-4.text-center.border
     %h3.gray-text Inscripciones
-    .circle.bg-green.center-block.small-margin.padding-xs=link_to (image_tag "inscripcion.png", width: 100)
+    .circle.bg-d-blue.center-block.small-margin.padding-xs=link_to (image_tag "inscripcion.png", width: 100)
     %p.top-padding=link_to "Conoce los requisitos de Inscripción"
   .col-sm-6.col-lg-4.text-center.border
     %h3.gray-text Becas
-    .circle.bg-green.center-block.small-margin.padding-xs=link_to (image_tag "becas.png", width: 100)
+    .circle.bg-e-blue.center-block.small-margin.padding-xs=link_to (image_tag "becas.png", width: 100)
     %p.top-padding=link_to "Conoce nuestras Becas"
   .col-sm-6.col-lg-4.text-center.border
     %h3.gray-text Servicio Social
@@ -55,8 +55,8 @@
                 %br
                 %button{ "type" => "button", :class => "btn btn-primary btn-sm", "data-dismiss" => "modal"} Close
         - if usuario_signed_in?
-          %p= link_to 'Edit', edit_post_path(post)
-          %p= link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
+          %p= link_to 'Editar', edit_post_path(post)
+          %p= link_to 'Eliminar', post, :method => :delete, :data => { :confirm => 'Estás seguro?' }
   - if usuario_signed_in?
     %p.pull-right= link_to '+ Agregar Post', new_post_path
 .col-md-12.top-margin-md

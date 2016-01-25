@@ -1,45 +1,58 @@
-%p#notice= notice
-
-%p
-  %b Control:
-  = @student.control
-%p
-  %b Nombre:
-  = @student.nombre
-%p
-  %b Appelidos:
-  = @student.appelidos
-%p
-  %b Direccion:
-  = @student.direccion
-%p
-  %b Email:
-  = @student.email
-%p
-  %b Telefono:
-  = @student.telefono
-%p
-  %b Celular:
-  = @student.celular
-%p
-  %b Nacimiento:
-  = @student.nacimiento
-%p
-  %b Ingreso:
-  = @student.ingreso
-%p
-  %b Activo:
-  = @student.activo
-%p
-  %b Pago:
-  = @student.pago
-%p
-  %b Carrera:
-  = @student.carrera
-%p
-  %b Grupo:
-  = @student.grupo
-
-= link_to 'Editar', edit_student_path(@student)
-\|
-= link_to 'Regresar', students_path
+.container.text-justify.border
+  %p#notice= notice
+  .col-md-12.top-margin-md
+    .col-md-7
+      %h4
+        %b Alumno:
+        = @student.nombre + " " + @student.appelidos
+    .col-md-2
+    .col-md-3
+      %h4
+        %b # Control:
+        = @student.control
+  .col-md-12.top-margin-md
+    .col-md-2
+    .col-md-3
+      %p
+        %b Direccion:
+        = @student.direccion
+      %p
+        %b Email:
+        = @student.email
+      %p
+        %b Telefono:
+        = @student.telefono
+      %p
+        %b Celular:
+        = @student.celular
+      %p
+        %b Nacimiento:
+        = @student.nacimiento
+    .col-md-2
+    .col-md-3
+      %p
+        %b Ingreso:
+        = @student.ingreso
+      %p
+        %b Activo:
+        - if @student.activo?
+          Si
+        - else
+          No
+      %p
+        %b Pago:
+        - if @student.pago?
+          Si
+        - else
+          No
+      %p
+        %b Carrera:
+        = @student.carrera
+      %p
+        %b Grupo:
+        = @student.grupo
+.col-md-10
+.col-md-2.top-margin
+  = link_to 'Editar', edit_student_path(@student)
+  \|
+  = link_to 'Regresar', students_path

@@ -13,14 +13,20 @@
 						%span.icon-bar.black-text
 				.collapse.navbar-collapse#bs-example-navbar-collapse-1
 					%ul.nav.navbar-nav.black-text
-						%li{:class => "presentacion #{'activa' if current_page?(root_path)}"}=link_to "Inicio", root_path
 						- if usuario_signed_in?
+							%li{:class => "presentacion #{'activa' if current_page?(root_path)}"}=link_to "CMS", root_path
 							%li.presentacion=link_to "Sistema", students_path
 							%li.presentacion=link_to "Editar Perfil", edit_usuario_registration_path
 							%li.presentacion=link_to "Salir", destroy_usuario_session_path, :method => :delete
 						- else
+							%li{:class => "presentacion #{'activa' if current_page?(root_path)}"}=link_to "Inicio", root_path
 							%li{:class => "presentacion #{'activa' if current_page?(welcome_quienes_somos_path)}"}=link_to "Quienes Somos", welcome_quienes_somos_path
 							%li{:class => "presentacion #{'activa' if current_page?(welcome_carreras_path)}"}=link_to "Carreras"
 							%li{:class => "presentacion #{'activa' if current_page?(welcome_servicios_path)}"}=link_to "Servicios"
 							%li{:class => "presentacion #{'activa' if current_page?(welcome_contacto_path)}"}=link_to "Contacto", welcome_contacto_path
 							%li{:class => "presentacion #{'activa' if current_page?(usuario_session_path)}"}=link_to "Entrar", new_usuario_session_path
+	- if usuario_signed_in?
+		.col-md-10
+		.col-md-2
+			%h4 Usuario:
+			=current_usuario.email
