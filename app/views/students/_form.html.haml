@@ -1,0 +1,50 @@
+.col-md-8.col-md-offset-2
+  = form_for @student do |f|
+    - if @student.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@student.errors.count, "error")} prohibited this student from being saved:"
+        %ul
+          - @student.errors.full_messages.each do |msg|
+            %li= msg
+
+    .field
+      = f.label :control
+      = f.text_field :control
+    .field
+      = f.label :nombre
+      = f.text_field :nombre
+    .field
+      = f.label :appelidos
+      = f.text_field :appelidos
+    .field
+      = f.label :direccion
+      = f.text_field :direccion
+    .field
+      = f.label :email
+      = f.text_field :email
+    .field
+      = f.label :telefono
+      = f.text_field :telefono
+    .field
+      = f.label :celular
+      = f.text_field :celular
+    .field
+      = f.label :nacimiento
+      = f.text_field :nacimiento
+    .field
+      = f.label :ingreso
+      = f.text_field :ingreso
+    .field
+      = f.label :activo
+      = f.check_box :activo
+    .field
+      = f.label :pago
+      = f.check_box :pago
+    .field
+      = f.label :carrera
+      = f.text_field :carrera
+    .field
+      = f.label :grupo
+      = f.text_field :grupo
+    .actions
+      = f.submit 'Guardar', class: "btn btn-primary"

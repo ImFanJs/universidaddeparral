@@ -1,13 +1,6 @@
 %footer
 	.col-md-12.bg-black.top-padding.top-margin
-		.col-md-4.text-center
-			%h4.white-text.bottom-margin Síguenos en:
-			%p=link_to (image_tag "facebook.png", width: 40), "http://www.facebook.com/universidaddeparral", class: "opaco"
-			universidaddeparral
-			%p
-			%p=link_to (image_tag "twitter.png", width: 50), "http://www.facebook.com/universidaddeparral", class: "opaco"
-			universidaddeparral
-		.col-md-4.green-text
+		.col-md-4.green-text.top-margin
 			%h4.white-text.bottom-margin.text-center Contacto
 			.row
 				.col-md-2.col-md-offset-1
@@ -25,7 +18,13 @@
 					=image_tag "mail.png", width: 35, class: "opaco"
 				.col-md-9
 					%p hola@universidaddeparral.com
-		.col-md-4.text-center.green-text
+		.col-md-4.text-center.top-margin
+			%h4.white-text.bottom-margin Síguenos en:
+			=link_to (image_tag "facebook.png", width: 40), "http://www.facebook.com/universidaddeparral", class: "opaco"
+			=link_to (image_tag "twitter.png", width: 50), "http://www.facebook.com/universidaddeparral", class: "opaco"
+			=link_to (image_tag "google.png", width: 40), "http://www.facebook.com/universidaddeparral", class: "opaco"
+			=link_to (image_tag "youtube.png", width: 45), "http://www.facebook.com/universidaddeparral", class: "opaco"
+		.col-md-4.text-center.green-text.hidden-xs.top-margin
 			%h4.white-text.bottom-margin Licenciaturas
 			%p Derecho
 			%p Educación

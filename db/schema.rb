@@ -11,38 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160120170338) do
-
-  create_table "alumnos", force: :cascade do |t|
-    t.string   "name"
-    t.string   "lastname"
-    t.string   "control"
-    t.string   "integer"
-    t.string   "birthday"
-    t.string   "date"
-    t.string   "address"
-    t.string   "text"
-    t.string   "city"
-    t.string   "state"
-    t.string   "country"
-    t.string   "phone"
-    t.string   "celular"
-    t.string   "ingreso"
-    t.string   "active"
-    t.string   "boolean"
-    t.string   "carrera"
-    t.string   "grupo"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "homes", force: :cascade do |t|
-    t.string   "title"
-    t.string   "image"
-    t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
+ActiveRecord::Schema.define(version: 20160124034311) do
 
   create_table "posts", force: :cascade do |t|
     t.string   "title"
@@ -54,6 +23,24 @@ ActiveRecord::Schema.define(version: 20160120170338) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+  end
+
+  create_table "students", force: :cascade do |t|
+    t.string   "control"
+    t.string   "nombre"
+    t.string   "appelidos"
+    t.string   "direccion"
+    t.string   "email"
+    t.string   "telefono"
+    t.string   "celular"
+    t.string   "nacimiento"
+    t.string   "ingreso"
+    t.boolean  "activo"
+    t.boolean  "pago"
+    t.string   "carrera"
+    t.string   "grupo"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

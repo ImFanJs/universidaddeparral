@@ -33,7 +33,7 @@
     .circle.bg-green.center-block.small-margin.padding-xs=link_to (image_tag "social.png", width: 100)
     %p.top-padding=link_to "Realiza tu servicio social"
 .container
-  .col-md-12.top-padding.bottom-padding.top-margin-md
+  .col-md-12.top-margin-md
     %h2.text-center.text-info Noticias Recientes
     - @posts.each do |post|
       .col-md-4.col-sm-6.border.small-margin
@@ -59,6 +59,6 @@
           %p= link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
   - if usuario_signed_in?
     %p.pull-right= link_to '+ Agregar Post', new_post_path
-.col-md-12.top-padding.bottom-padding.top-margin-sm
+.col-md-12.top-margin-md
   %h2.text-center.text-info Nuestras Carreras
 = render 'layouts/carrera'
