@@ -7,37 +7,37 @@
     %li= image_tag "uni.jpg"
 .container-fluid
   .col-md-12.top-padding.bottom-padding
-    %h1.text-center.green-text Bienvenidos a UDP
+    %h1.text-center.navy-text Bienvenidos a UDP
   .col-sm-6.col-lg-4.text-center.border
-    %h3.gray-text Carreras
-    .circle.bg-blue.center-block.small-margin.padding-xs=link_to (image_tag "lic.png", width: 100)
-    %p.top-padding=link_to "Conoce nuestras Carreras"
+    %h3.blue-text Carreras
+    .circle.bg-green.center-block.small-margin.padding-xs=link_to (image_tag "lic.png", width: 100), welcome_carreras_path
+    %p.top-padding=link_to "Conoce nuestras Carreras", welcome_carreras_path
   .col-sm-6.col-lg-4.text-center.border
-    %h3.gray-text Maestrías
-    .circle.bg-navy.center-block.small-margin.padding-xs=link_to (image_tag "maestrias.png", width: 100)
-    %p.top-padding=link_to "Conoce nuestras Maestrías"
+    %h3.blue-text Maestrías
+    .circle.bg-green.center-block.small-margin.padding-xs=link_to (image_tag "maestrias.png", width: 100), welcome_carreras_path
+    %p.top-padding=link_to "Conoce nuestras Maestrías", welcome_carreras_path
   .col-sm-6.col-lg-4.text-center.border
-    %h3.gray-text Campus
-    .circle.bg-l-blue.center-block.small-margin.padding-xs=link_to (image_tag "campus.png", width: 100), welcome_quienes_somos_path
+    %h3.blue-text Campus
+    .circle.bg-green.center-block.small-margin.padding-xs=link_to (image_tag "campus.png", width: 100), welcome_quienes_somos_path
     %p.top-padding=link_to "Conoce nuestro Campus", welcome_quienes_somos_path
   .col-sm-6.col-lg-4.text-center.border
-    %h3.gray-text Inscripciones
-    .circle.bg-d-blue.center-block.small-margin.padding-xs=link_to (image_tag "inscripcion.png", width: 100)
+    %h3.blue-text Inscripciones
+    .circle.bg-green.center-block.small-margin.padding-xs=link_to (image_tag "inscripcion.png", width: 100)
     %p.top-padding=link_to "Conoce los requisitos de Inscripción"
   .col-sm-6.col-lg-4.text-center.border
-    %h3.gray-text Becas
-    .circle.bg-e-blue.center-block.small-margin.padding-xs=link_to (image_tag "becas.png", width: 100)
+    %h3.blue-text Becas
+    .circle.bg-green.center-block.small-margin.padding-xs=link_to (image_tag "becas.png", width: 100)
     %p.top-padding=link_to "Conoce nuestras Becas"
   .col-sm-6.col-lg-4.text-center.border
-    %h3.gray-text Servicio Social
+    %h3.blue-text Servicio Social
     .circle.bg-green.center-block.small-margin.padding-xs=link_to (image_tag "social.png", width: 100)
     %p.top-padding=link_to "Realiza tu servicio social"
 .container
   .col-md-12.top-margin-md
-    %h2.text-center.text-info Noticias Recientes
+    %h2.text-center.navy-text Noticias Recientes
     - @posts.each do |post|
       .col-md-4.col-sm-6.border.small-margin
-        %h4.text-center.gray-text= post.title
+        %h4.text-center.blue-text= post.title
         .imagen.padding-sm.puntero{ "data-toggle" => "modal", "data-target" => "#miModal#{post.id}" }=image_tag post.image
         %p.padding-sm= post.description[0..140] + "..."
         %button{ "type" => "button", "class" => "btn btn-primary btn-sm", "data-toggle" => "modal", "data-target" => "#miModal#{post.id}" } Leer Más
@@ -60,5 +60,5 @@
   - if usuario_signed_in?
     %p.pull-right= link_to '+ Agregar Post', new_post_path
 .col-md-12.top-margin-md
-  %h2.text-center.text-info Nuestras Carreras
+  %h2.text-center.navy-text Nuestras Carreras
 = render 'layouts/carrera'

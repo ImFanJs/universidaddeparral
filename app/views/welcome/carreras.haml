@@ -1,9 +1,9 @@
 .container-fluid.border-top
-	.col-md-12.top-margin
-		%h2.text-center.green-text Nuestras Carreras
+	.col-md-12
+		%h2.text-center.navy-text Nuestras Carreras
 = render "layouts/carrera"
 .container-fluid.no-space.top-margin-md
-	.col-md-12.no-space.bg-gray
+	.col-md-12.no-space.bg-navy
 		.col-md-4.no-space=image_tag "derecho.jpg", width: 400, height: 220, class: ""
 		.col-md-1
 		.col-md-6
@@ -12,19 +12,113 @@
 	.col-md-12
 		.col-md-5
 		.col-md-7.top-margin
-			%h4.text-info Que aprenderás en esta carrera?
+			%h4.blue-text ¿Qué la hace diferente?
+			%p El espíritu y la técnica de negociar conflictos mediante las habilidades de mediación.
 			.col-md-1
 			.col-md-11.gray-text
-				%p Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes.
+				%h4.text-info Campo de Trabajo:
 				%ul
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
+					%li Áreas jurídicas del sector público y privado
+					%li Despachos de abogados
+					%li Áreas de negociación y acuerdos internacionales 
+					%li Despachos de mediación, negociación y solución de conflictos
+					%li Puestos de elección popular
+					%li Notarias 
+					%li Institutos educativos
+					%li Práctica profesional independiente
+				%button{ "type" => "button", "class" => "btn btn-primary btn-sm top-margin-md", "data-toggle" => "modal", "data-target" => "#miModal1" } Plan de Estudios
+				.col-md-6.col-md-offset-3.modal.fade{ "id" => "miModal1", "tabindex" => "-1", "role" => "dialog", "aria-labelledby" => "myModalLabel" }
+					.modal-dialog{ "role" => "document" }
+					.modal-content
+						.modal-header.bg-info
+							%button{ "type" => "button", "class" => "close", "data-dismiss" => "modal", "aria-label" => "Close"}
+								%span{ "aria-hidden" => "true"} &times;
+						.modal-body
+							%h4.blue-text.text-center Tetramestre I
+							%ul
+								%li Teoría General del Derecho.
+								%li Derecho familiar.
+								%li Ingles I.
+								%li Sistemas Políticos Aplicados al derecho
+								%li Historia del derecho
+								%li Derecho romano
+								%li Prospección y Comunicación jurídica 
+								%li Taller aplicado
+							%h4.blue-text.text-center Tetramestre II
+							%ul
+								%li Teoría general del estado
+								%li Teoría general de los bienes
+								%li Nociones electorales
+								%li Filosofía del derecho
+								%li Derecho constitucional
+								%li Inglés II
+								%li Propiedad intelectual
+								%li Taller aplicado II
+							%h4.blue-text.text-center Tetramestre III
+							%ul
+								%li Obligaciones
+								%li Laboral invidual
+								%li Derecho fiscal
+								%li Control constitucional
+								%li Escuelas penalistas y sus corrientes
+								%li Inglés III
+								%li Sociedades mercantiles
+								%li Taller aplicado III
+							%h4.blue-text.text-center Tetramestre IV
+							%ul
+								%li Trámites del derecho
+								%li Títulos y operaciones de crédito
+								%li Inglés IV
+								%li Taller aplicado IV
+								%li Derecho social
+								%li Teoría del delito
+								%li Contratos civiles
+								%li Administración y economía
+							%h4.blue-text.text-center Tetrametre V
+							%ul
+								%li Teoría general del proceso
+								%li Contratos mercantiles
+								%li Delitos en fuero común
+								%li Derechos fundamentales
+								%li Administrativo
+								%li Medios alternativos
+								%li Inglés V
+								%li Taller aplicado V
+							%h4.blue-text.text-center Tetramestre VI
+							%ul
+								%li Investigación jurídica
+								%li Garantías
+								%li Derecho ambiental
+								%li Derecho agrario
+								%li Derecho financiero
+								%li Derecho internacional
+								%li Penal federal e internacional
+								%li Taller aplicado VI
+							%h4.blue-text.text-center Tetramestre VII
+							%ul
+								%li Menores infractores
+								%li Procesal civil
+								%li Procesal mercantil
+								%li Procesal laboral
+								%li Procesal penal
+								%li Procesal administrativo
+								%li Investigación jurídica
+								%li Taller aplicado VII
+							%h4.blue-text.text-center Tetramestre VIII
+							%ul
+								%li Amparo 
+								%li Litigación oral
+								%li Derechos humanos
+								%li Manejo de paquetes computacionales para el abogado
+								%li Recursos
+								%li Criminología y criminalística
+								%li Investigación jurídica 
+								%li Taller aplicado VIII
+						.modal-footer
+							%br
+							%button{ "type" => "button", :class => "btn btn-primary btn-sm", "data-dismiss" => "modal"} Close
 .container-fluid.no-space.top-margin-md
-	.col-md-12.no-space.bg-gray
+	.col-md-12.no-space.bg-navy
 		.col-md-1
 		.col-md-6
 			%h2.top-margin.white-text.text-center Licenciatura en Educación
@@ -33,19 +127,132 @@
 .container
 	.col-md-12
 		.col-md-8.top-margin
-			%h4.text-info Que aprenderás en esta carrera?
+			%h4.blue-text ¿Que la hace diferente?
+			%p Con una visión integral de los procesos educativos en los contextos global y loca; comprometidos con el desarrollo social y sustentable del país; creativos e innovadores capaces de desarrollar una reflexión crítica sobre los problemas educativos planteando alternativas en su área de competencia, sustentadas en los avances de la ciencia y la tecnología , de esta manera los egresados estarán en condiciones para investigar, evaluar, diseñar, gestionar e intervenir en proyectos educativos de calidad en lo individual y social.
 			.col-md-1
-			.col-md-11.gray-text
-				%p Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes.
+			.col-md-11
+				%h4.text-info Campo de Trabajo:
 				%ul
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
+					%li Centros comunitarios (trabajo preventivo, apoyo educativo a centros de asesoría comunitaria, educación continua para adultos)
+					%li Comunidad empresarial (preparación de material educativo, diseño y asesoría de planes para formación y capacitación)
+					%li Comunidad educativa (asesorías pedagógicas, diseño curricular, formación de profesores, capacitación docente, investigación educativa, docencia,  evaluación institucional y administración de centros escolares)
+					%li Libre ejercicio de la profesión  (investigación, asesoría pedagógica, investigación de necesidades educativas, auditorías de calidad interna o externa, elaboración de informes de autoevaluación, control de calidad, manuales de calidad)
+				%button{ "type" => "button", "class" => "btn btn-primary btn-sm top-margin-md", "data-toggle" => "modal", "data-target" => "#miModal2" } Plan de Estudios
+				.col-md-6.col-md-offset-3.modal.fade{ "id" => "miModal2", "tabindex" => "-1", "role" => "dialog", "aria-labelledby" => "myModalLabel" }
+					.modal-dialog{ "role" => "document" }
+					.modal-content
+						.modal-header.bg-info
+							%button{ "type" => "button", "class" => "close", "data-dismiss" => "modal", "aria-label" => "Close"}
+								%span{ "aria-hidden" => "true"} &times;
+						.modal-body
+							%h4.blue-text.text-center Tetramestre I
+							%p Bloque I
+							%ul
+								%li Introducción a la filosofía
+								%li Introducción a la pedagogía I
+								%li Psicología de la educación I
+								%li Sociología de la educación I
+							%p Bloque II
+							%ul
+								%li Psicología evolutiva I
+								%li Fundamentos de la investigación pedagógica I 
+								%li Inglés I
+								%li Tecnologías del aprendizaje
+							%h4.blue-text.text-center Tetramestre II
+							%p Bloque I
+							%ul
+								%li Fisolofía I
+								%li Informática
+								%li Psicología de la educación II
+								%li Sociología de la educación II
+							%p Bloque II
+							%ul
+								%li Psicología social
+								%li Fundamentos de la investigación pedagógica II
+								%li Inglés II
+								%li Habilidades del pensamiento
+							%h4.blue-text.text-center Tetramestre III
+							%p Bloque I
+							%ul
+								%li Historia de la educación y de la pedagogía I
+								%li Estadística en la investigación pedagógica I (investigación Cuantitativa I)
+								%li Didáctica general
+								%li Corrientes de la filosofía de la educación 
+							%p Bloque II
+							%ul
+								%li Antropología pedagogía 
+								%li Comunicación educativa I
+								%li Psicotécnica pedagógica I
+								%li Inglés III
+							%h4.blue-text.text-center Tetramestre IV
+							%p Bloque I
+							%ul
+								%li Historia de la educación y de la pedagogía II
+								%li Estadística en la investigación pedagógica II (investigación Cualitativa I)
+								%li Didáctica general II
+							%p Bloque II
+							%ul
+								%li Psicotécnica pedagógica II
+								%li Sistemas educativos latinoamericanos 
+								%li Inglés IV
+								%li Teorías del aprendizaje (corrientes pedagógicas contemporáneas)
+							%h4.blue-text.text-center Tetramestre V
+							%p Bloque I
+							%ul
+								%li Historia de la educación en México I
+								%li Pedagogía contemporánea del siglo XXI
+								%li Legislación educativa I
+								%li Orientación educativa I
+							%p Bloque II
+							%ul
+								%li Educación especial
+								%li Ingles V
+								%li Diagnóstico pedagógico 
+								%li Laboratorio de Psicopedagogía 
+							%h4.blue-text.text-center Tetramestre VI
+							%p Bloque I
+							%ul
+								%li Historias de la educación en México II
+								%li Política educativa
+								%li Administración educativa
+								%li Estadística aplicada a la educación
+							%p Bloque II
+							%ul
+								%li Taller de prácticas profesionales I
+								%li Laboratorio de didáctica 
+								%li Inglés VI
+								%li Seminario de la filosofía de la educación I
+							%h4.blue-text.text-center Tetramestre VII
+							%p Bloque I
+							%ul
+								%li Metodología de la investigación
+								%li Educación de adultos
+								%li Gestión escolar
+								%li Desarrollo humano I
+							%p Bloque II
+							%ul
+								%li Taller de didáctica
+								%li seminario de tesis I
+								%li Diseño Curricular
+								%li Planeación educativa
+							%h4.blue-text.text-center Tetramestre VIII
+							%p Bloque I
+							%ul
+								%li Taller de prácticas profesionales II
+								%li Desarrollo humano II
+								%li Seminario de tesis II
+								%li Taller de investigación pedagógica 
+							%p Bloque II
+							%ul
+								%li Taller de administración educativa
+								%li Seminario de ingles
+								%li Seminario de ética profesional
+								%li Habilidades empresariales
+						.modal-footer
+							%br
+							%button{ "type" => "button", :class => "btn btn-primary btn-sm", "data-dismiss" => "modal"} Close
 .container-fluid.no-space.top-margin-md
-	.col-md-12.no-space.bg-gray
+	.col-md-12.no-space.bg-navy
 		.col-md-4.no-space=image_tag "psicologia.jpg", width: 400, height: 220, class: ""
 		.col-md-1
 		.col-md-6
@@ -54,98 +261,343 @@
 	.col-md-12
 		.col-md-5
 		.col-md-7.top-margin
-			%h4.text-info Que aprenderás en esta carrera?
+			%h4.blue-text ¿Qué la hace diferente?
+			%p El estudiante en psicología apto para la atención de diversas necesidades sociales, pudiendo atender necesidades y problemas de salud mental, bienestar emocional y rehabilitación neurológica, de índole educativa, organizacionales, procesos psicosociales y culturales. Por lo tanto el licenciado en psicología es el profesional que posee los conocimientos, procedimientos, habilidades, actitudes y valores para comprender, diagnosticar e intervenir en la satisfacción de necesidades y la solución de problemas psicológicos en escenarios diversos, complejos y cambiantes.
 			.col-md-1
 			.col-md-11.gray-text
-				%p Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes.
+				%h4.text-info Campo de Trabajo:
 				%ul
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
+					%li Instituciones educativas, en las áreas de dirección, administración, investigación, asesoría y evaluación educativa, así como la docencia.
+					%li Unidades de desarrollo personal
+					%li Psicología clínica a través de terapia a individuos y grupos
+					%li Asesoría a organizaciones, escuelas y grupos humanos para mejorar la calidad de vida y salud de las instituciones.
+					%li Acompañamiento a grupos urbanos, rurales e indígenas en la integración intercultural y desarrollo de virtudes sociales para la convivencia de calidad.
+					%li En las diferentes áreas de desarrollo organizacional inducción y selección de personal, mejoramiento del clima laborar y desarrollo humano.
+				%button{ "type" => "button", "class" => "btn btn-primary btn-sm top-margin-md", "data-toggle" => "modal", "data-target" => "#miModal3" } Plan de Estudios
+				.col-md-6.col-md-offset-3.modal.fade{ "id" => "miModal3", "tabindex" => "-1", "role" => "dialog", "aria-labelledby" => "myModalLabel" }
+					.modal-dialog{ "role" => "document" }
+					.modal-content
+						.modal-header.bg-info
+							%button{ "type" => "button", "class" => "close", "data-dismiss" => "modal", "aria-label" => "Close"}
+								%span{ "aria-hidden" => "true"} &times;
+						.modal-body
+							%h4.blue-text.text-center Tetramestre I
+							%ul
+								%li Bases biológicas de la conducta
+								%li Historia de la psicología 
+								%li Modelos en psicología clínica
+								%li Ingles I
+								%li Psicología social de la interacción
+								%li Aprendizaje y conducta adaptiva
+								%li Psicología social de lo colectivo
+								%li Ingles II
+							%h4.blue-text.text-center Tetramestre II
+							%ul
+								%li Neurobiología y adaptación
+								%li Introducción a la metodología de la investigación psicológica 
+								%li Teoría psicogenética constructivista
+								%li Ingles III
+								%li Medición y evaluación psicológica 
+								%li Psicofisiológica
+								%li Psicología social de los grupos
+								%li Ingles IV
+							%h4.blue-text.text-center Tetramestre III
+							%ul
+								%li Psicobiología
+								%li Lengua, sentido y acción social
+								%li Estadística inferencial en piscología 
+								%li Teoría sociocultural
+								%li Procesos colectivos y problemas sociales
+								%li Estrategias de intervención 
+								%li Sexualidad humana y género
+								%li Aprendizaje, motivación y cognición 
+							%h4.blue-text.text-center Tetramestre IV
+							%ul
+								%li Comunicación y psicología política 
+								%li El delito: una construcción social
+								%li Teoría y técnica de la entrevista I
+								%li Francés I
+								%li Psicodiagnóstico I
+								%li Psicodinámica de grupos
+								%li Teoría y técnicas de la entrevista II
+								%li Francés II
+							%h4.blue-text.text-center Tetrametre V
+							%ul
+								%li Psicodiagnóstico II
+								%li Integración de informes psicológicos
+								%li Psicogeronotología 
+								%li Psicopatología I
+								%li Salud comunitaria y Epidemiología
+								%li Seguridad, higiene y ambiente de trabajo
+								%li Administración de personal
+								%li Psicopatología II
+							%h4.blue-text.text-center Tetramestre VI
+							%ul
+								%li Intervención en psicología escolar
+								%li Psicofarmacología y adicción
+								%li Psicobiología del desarrollo
+								%li Psicología de la salud en el trabajo
+								%li Investigación cuantitativa en educación
+								%li Diseño de modelos y estrategías educativas
+								%li Impacto psicosocial de las empresas
+								%li Enseñanza de la psicología
+							%h4.blue-text.text-center Tetramestre VII
+							%ul
+								%li Capacitación y desarrollo de personal
+								%li Conducta, organización y administración
+								%li Relaciones laborales
+								%li Calidad, productividad y competitividad 
+								%li Introducción a la mercadotecnia
+								%li Cultura y comportamiento organizacional
+								%li Desarrollo curricular
+								%li Seminario de comunicación
+							%h4.blue-text.text-center Tetramestre VIII
+							%ul
+								%li Prácticas profesionales I
+								%li Identidad universitaria 
+								%li Seminario de tesis I
+								%li Taller de investigación I
+								%li Prácticas profesionales II
+								%li Ética profesional
+								%li Taller de investigación II
+								%li Seminario de tesis II
+						.modal-footer
+							%br
+							%button{ "type" => "button", :class => "btn btn-primary btn-sm", "data-dismiss" => "modal"} Close
 .container-fluid.no-space.top-margin-md
-	.col-md-12.no-space.bg-gray
-		.col-md-1
-		.col-md-6
-			%h2.top-margin.white-text.text-center Licenciatura en Ciencias Forenses
-		.col-md-1
-		.col-md-4.text-right.no-space=image_tag "forense.jpg", width: 400, height: 220, class: ""
-.container
-	.col-md-12
-		.col-md-8.top-margin
-			%h4.text-info Que aprenderás en esta carrera?
-			.col-md-1
-			.col-md-11.gray-text
-				%p Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes.
-				%ul
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-.container-fluid.no-space.top-margin-md
-	.col-md-12.no-space.bg-gray
-		.col-md-4.no-space=image_tag "social.jpg", width: 400, height: 220, class: ""
+	.col-md-12.no-space.bg-navy
 		.col-md-1
 		.col-md-6
 			%h2.top-margin.white-text.text-center Licenciatura en Trabajo Social
-.container
-	.col-md-12
-		.col-md-5
-		.col-md-7.top-margin
-			%h4.text-info Que aprenderás en esta carrera?
-			.col-md-1
-			.col-md-11.gray-text
-				%p Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes.
-				%ul
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-.container-fluid.no-space.top-margin-md
-	.col-md-12.no-space.bg-gray
 		.col-md-1
-		.col-md-6
-			%h2.top-margin.white-text.text-center Maestría en Medicina Legal
-		.col-md-1
-		.col-md-4.text-right.no-space=image_tag "medicina.jpg", width: 400, height: 220, class: ""
+		.col-md-4.text-right.no-space=image_tag "social.jpg", width: 400, height: 220, class: ""
 .container
 	.col-md-12
 		.col-md-8.top-margin
-			%h4.text-info Que aprenderás en esta carrera?
+			%h4.blue-text ¿Que la hace diferente?
+			%p El trabajo social en sus distintas expresiones  se dirige a las múltiples y complejas relaciones entre las personas y sus ambientales, su misión es facilitar que todas las personas desarrollen plenamente sus potencialidades, enriquezcan sus vidas y profesionales en trabajo social, se convierten en agentes de cambio en la sociedad y en la vida que las personas, familias y comunidades para las que trabajan. El trabajo social es un sistema integrado y dinámico de valores, teoría y práctica interrelacionados.	
 			.col-md-1
-			.col-md-11.gray-text
-				%p Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes.
+			.col-md-11
+				%h4.text-info Campo de Trabajo:
 				%ul
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
+					%li Empresas públicas y privadas en sus servicios de bienestar
+					%li Hospitales
+					%li Consultorios de salud
+					%li Jardines infantiles
+					%li Escuelas básicas
+					%li Liceos y colegios
+					%li Universidades
+					%li Escuelas diferenciales
+					%li Municipios y ministerios
+					%li Instituciones de asistencia social, nacionales e internacionales, participando en la planificación de proyectos de desarrollo local y rural.
+					%li En empresas privadas se podrá desempeñar
+				%button{ "type" => "button", "class" => "btn btn-primary btn-sm top-margin-md", "data-toggle" => "modal", "data-target" => "#miModal4" } Plan de Estudios
+				.col-md-6.col-md-offset-3.modal.fade{ "id" => "miModal4", "tabindex" => "-1", "role" => "dialog", "aria-labelledby" => "myModalLabel" }
+					.modal-dialog{ "role" => "document" }
+					.modal-content
+						.modal-header.bg-info
+							%button{ "type" => "button", "class" => "close", "data-dismiss" => "modal", "aria-label" => "Close"}
+								%span{ "aria-hidden" => "true"} &times;
+						.modal-body
+							%h4.blue-text.text-center Tetramestre I
+							%ul
+								%li Desarrollo histórico del trabajo social
+								%li Teoría social I
+								%li Teoría económica I
+								%li Ingles I
+								%li Situación internacional contemporánea
+								%li Análisis de estado mexicano
+								%li Necesidades y problemas sociales
+								%li Lógica y epistemología
+							%h4.blue-text.text-center Tetramestre II
+							%ul
+								%li Teoría del trabajo social comunitario
+								%li Teoría social II
+								%li Teoría económica II
+								%li Ingles II
+								%li Situación nacional contemporánea
+								%li Política social
+								%li Población y medio ambiente
+								%li Investigación social I
+							%h4.blue-text.text-center Tetramestre III
+							%ul
+								%li Teoría de grupos y trabajo social
+								%li Teoría social III
+								%li Problemática rural
+								%li Ingles III
+								%li Estadística aplicada a la investigación social I
+								%li Movimiento y participación social
+								%li Programación social
+								%li Investigación social II
+							%h4.blue-text.text-center Tetramestre IV
+							%ul
+								%li Trabajo social en la atención individualizada
+								%li Planeación y desarrollo social
+								%li Organización y promoción social
+								%li Ingles IV
+								%li Estadística aplicada a la investigación social II
+								%li Desarrollo regional
+								%li Salud Publica
+								%li Problemática urbana
+							%h4.blue-text.text-center Tetrametre V
+							%ul
+								%li Evaluación de proyectos sociales
+								%li Familia y vida cotidiana
+								%li Salud mental
+								%li Ingles V
+								%li Derechos humanos
+								%li Educación social
+								%li Procuración y administración de justicia 
+							%h4.blue-text.text-center Tetramestre VI
+							%ul
+								%li Psicología social 
+								%li Administración social 
+								%li Situación jurídica de la familia
+								%li Ingles VI
+								%li Psicología del desarrollo humano
+								%li Comunicación social
+								%li Identidad y cultura
+								%li Análisis institucional
+							%h4.blue-text.text-center Tetramestre VII
+							%ul
+								%li Ética profesional
+								%li Identidad universitaria
+								%li Ingles VII
+								%li Taller de informática I
+								%li Relaciones laborales
+								%li Administración de personal
+								%li Capacitación de desarrollo de personal
+								%li Taller de informática II
+							%h4.blue-text.text-center Tetramestre VIII
+							%ul
+								%li Prácticas profesionales
+								%li Seminario de tesis I
+								%li Taller de investigación I
+								%li Seminario de comunicación
+								%li Prácticas profesionales II
+								%li Seminario de tesis II
+								%li Taller de investigación II
+								%li Seminario de ingles
+						.modal-footer
+							%br
+							%button{ "type" => "button", :class => "btn btn-primary btn-sm", "data-dismiss" => "modal"} Close
 .container-fluid.no-space.top-margin-md
-	.col-md-12.no-space.bg-gray
-		.col-md-4.no-space=image_tag "Preparatoria.jpg", width: 400, height: 220, class: ""
+	.col-md-12.no-space.bg-navy
+		.col-md-4.no-space=image_tag "forense.jpg", width: 400, height: 220, class: ""
 		.col-md-1
 		.col-md-6
-			%h2.top-margin.white-text.text-center Preparatoria en un Examen
+			%h2.top-margin.white-text.text-center Licenciatura en Ciencias Forenses
 .container
 	.col-md-12
 		.col-md-5
 		.col-md-7.top-margin
-			%h4.text-info Que aprenderás en esta carrera?
+			%h4.blue-text ¿Qué la hace diferente?
+			%p Esta propuesta de creación de la licenciatura en ciencia forense indica con la descripción de lo que en la actualidad la ciencia forense, el escenario nacional, que lo requiere y una breve descripción de los apartados que incluye la propuesta, su estudia incluye disciplinas como psiquiatría, estomatología, antropología, entomología, toxicología, psicología y química forenses, medicina legal, criminología y derecho, entre otras también contiene aspectos relacionados con la intervención del experto en el incipiente sistema de justicia penal acusatorio que iniciará en el nivel nacional para el 2016, en los procedimientos de procuración y administración de la justicia, técnicas moleculares en biología forense y estudio de rasgos de personalidad.
 			.col-md-1
 			.col-md-11.gray-text
-				%p Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes. Aqui te desarrollaras como profesional en el area de leyes.
+				%h4.text-info Campo de Trabajo:
 				%ul
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
-					%li Aqui te desarrollaras como profesional en el area de leyes.
+					%li Compañías aseguradoras
+					%li Abogados postulantes
+					%li Secretarías de estado
+					%li Secretaría de seguridad pública federal
+					%li Procuraduría general de la república
+					%li Procuraduría general de justicia en cada una de las entidades federativas
+					%li Poder judicial
+					%li Suprema corte de justicia de la nación
+					%li Secretaria de salud
+					%li Comisión nacional de los derechos humanos
+					%li Comisiones y procuradurías  de los derechos humanos de las entidades federativas
+					%li Secretarias de salud en las entidades federativas
+					%li Secretarias del medio ambiente de las entidades federativas
+					%li Instituciones bancarias
+					%li Ejercicio privado en l investigación de hechos delictuosos 
+					%li Universidades y escuelas
+				%button{ "type" => "button", "class" => "btn btn-primary btn-sm top-margin-md", "data-toggle" => "modal", "data-target" => "#miModal5" } Plan de Estudios
+				.col-md-6.col-md-offset-3.modal.fade{ "id" => "miModal5", "tabindex" => "-1", "role" => "dialog", "aria-labelledby" => "myModalLabel" }
+					.modal-dialog{ "role" => "document" }
+					.modal-content
+						.modal-header.bg-info
+							%button{ "type" => "button", "class" => "close", "data-dismiss" => "modal", "aria-label" => "Close"}
+								%span{ "aria-hidden" => "true"} &times;
+						.modal-body
+							%h4.blue-text.text-center Tetramestre I
+							%ul
+								%li Introducción al derecho
+								%li Fundamentos de ciencias forenses 
+								%li Fundamentos de criminología 
+								%li Ingles I
+								%li Metodología de la investigación –computación
+								%li Sociología criminología
+								%li Ingles II
+							%h4.blue-text.text-center Tetramestre II
+							%ul
+								%li Comunicación oral y escrita 
+								%li Fotografía forense
+								%li Derecho constitucional
+								%li Ingles III
+								%li Fotografía forense especializada
+								%li Análisis integral de la escena del crimen
+								%li Criminología aplicada
+								%li Ingles IV
+							%h4.blue-text.text-center Tetramestre III
+							%ul
+								%li Infografía forense
+								%li Antropología criminológica
+								%li Derecho Penal parte especial
+								%li Introducción a la medicina forense y deontología forense
+								%li Bases biosociológicas de la conducta
+							%h4.blue-text.text-center Tetramestre IV
+							%ul
+								%li Antropología forense I
+								%li Derecho penal parte especial
+								%li Dactiloscopia
+								%li Criminología ambiental
+								%li Antropología  forense II
+								%li Derecho procesal penal 
+								%li Medicina forense I
+								%li Documentoscopia y grafoscopia  
+							%h4.blue-text.text-center Tetrametre V
+							%ul
+								%li Balística forense
+								%li Psicología criminológica I
+								%li Investigación Criminal I
+								%li Medicina forense II
+								%li Psicología criminológica II
+								%li Hechos de tránsito terrestre I
+								%li Investigación criminal II
+								%li Criminología corporativa 
+							%h4.blue-text.text-center Tetramestre VI
+							%ul
+								%li Hechos de tránsito Terrestre II
+								%li Partidos políticos
+								%li Finanzas públicas
+								%li Teoría de las relaciones internacionales
+								%li Criminalística aplicada
+								%li Psiquiatría forense I
+								%li Política criminológica 
+								%li Problemas socioeconómicos de México
+							%h4.blue-text.text-center Tetramestre VII
+							%ul
+								%li Perfilación criminal
+								%li Criminología clínica 
+								%li Preventología
+								%li Psiquiatría forense II
+								%li Organización y administración policial
+								%li Estadística aplicada
+								%li Sistema Penitenciario 
+								%li Tratamiento y reinserción social
+								%li Medicina forense III
+							%h4.blue-text.text-center Tetramestre VIII
+							%ul
+								%li Prácticas profesionales I
+								%li Seminario de tesis I
+								%li Taller de investigación I
+								%li Identidad Universitaria
+								%li Toma de decisiones y liderazgo 
+								%li Prácticas profesionales II
+								%li Seminario de tesis II
+								%li Taller de investigación
+						.modal-footer
+							%br
+							%button{ "type" => "button", :class => "btn btn-primary btn-sm", "data-dismiss" => "modal"} Close

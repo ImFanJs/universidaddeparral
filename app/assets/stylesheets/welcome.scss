@@ -105,20 +105,14 @@
 .bg-orange {
     background-color: orange;
 }
-.bg-blue {
-    background-color: blue;
+.blue-text {
+    color: blue;
+}
+.navy-text {
+    color: navy;
 }
 .bg-navy {
-    background-color: navy;
-}
-.bg-l-blue {
-    background-color: lightblue;
-}
-.bg-d-blue {
-    background-color: darkblue;
-}
-.bg-e-blue {
-    background-color: #00f;
+    background-color: navy !important;
 }
 
 /* Tamaño de letras */
@@ -215,7 +209,7 @@ h4 {
 }
 
 .presentacion a:hover {
-    border-bottom: 1px solid #337AB7;
+    border-bottom: 1px solid navy;
 }
 
 .logo img {
@@ -239,7 +233,7 @@ a:hover {
     cursor: pointer;
 }
 .activa {
-    background-color: #009688;
+    background-color: navy;
     color: #fff;
     border-radius: 5px;
 }

@@ -3,11 +3,11 @@
 		%ul.list-unstyled
 			%li.img-thumbnail= image_tag "mapa_udp.png"
 	.col-md-12
-		%h2.green-text.text-center Contacto
+		%h2.navy-text.text-center Contacto
 	.col-md-8.col-md-offset-2.top-margin
 		.panel.panel-primary
-			.panel-heading.text-center Envíanos tus datos para comenzar tu registro.
-			.panel-body.bg-info
+			.panel-heading.text-center.bg-navy Envíanos tus datos para comenzar tu registro.
+			.panel-body
 				=form_tag(controller: "welcome", action: "correo", method: "post") do
 					=text_field_tag "name",nil,class:"col-md-8 col-md-offset-2 form-group", placeholder:"Nombre"
 					=number_field_tag "tel",nil,class:"col-md-8 col-md-offset-2 form-group", placeholder:"Teléfono"
