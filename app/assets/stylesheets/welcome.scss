@@ -332,3 +332,16 @@ transform: translateX(0px);/*Regresamos a las posiciones originales*/
 .ejemplo-1:hover p {
 transition-delay: 0.1s;
 }
+
+img.desaturada { filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+}
+img.desaturada:hover { filter: grayscale(0);
+-webkit-filter: grayscale(0);
+-moz-filter: grayscale(0);
+-ms-filter: grayscale(0);
+-o-filter: grayscale(0);
+}
