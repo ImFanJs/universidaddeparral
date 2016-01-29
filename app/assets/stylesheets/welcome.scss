@@ -88,7 +88,7 @@
     color: #949494;
 }
 .bg-gray {
-    background-color: #949494;
+    background-color: #b1b1b1;
 }
 .bg-suc {
     background-color: #EEEEEE !important;
@@ -109,7 +109,7 @@
     color: blue;
 }
 .bg-blue {
-    background-color: blue;
+    background-color: blue !important;
 }
 .navy-text {
     color: navy;
@@ -224,6 +224,9 @@ h4 {
 }
 .puntero {
     cursor: pointer;
+}
+.ej a {
+    color: blue !important;
 }
 a:hover {
     background-color: transparent;
