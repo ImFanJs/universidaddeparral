@@ -1,18 +1,70 @@
-.container-fluid
-  .col-md-4.col-sm-6.border.small-margin.text-center
-    %h4.text-center.gray-text Inscripciones
-    .imagen.padding-sm.puntero imagen
-    %button{ "type" => "button", "class" => "btn btn-primary btn-sm", "data-toggle" => "modal", "data-target" => "#miModal1" } Leer Más
-    .modal.fade{ "id" => "miModal1", "tabindex" => "-1", "role" => "dialog", "aria-labelledby" => "myModalLabel" }
-      .modal-dialog{ "role" => "document" }
-        .modal-content
-          .modal-header.bg-green
-            %button{ "type" => "button", "class" => "close", "data-dismiss" => "modal", "aria-label" => "Close"}
-              %span{ "aria-hidden" => "true"} &times;
-            %h4.text-center.white-text.bottom-padding-xs#myModalLabel titulo
-          .modal-body.bg-success
-            .imagen.padding-sm imagen
-            %p.padding-sm descripcion
-          .modal-footer
-            %br
-            %button{ "type" => "button", :class => "btn btn-primary btn-sm", "data-dismiss" => "modal"} Close
+.col-md-12.slider
+  .no-space= image_tag "servicios.jpg"
+.container-fluid.no-space.top-margin-md
+  .col-md-12.padding-sm.bg-navy
+    %h2.white-text.text-center INSCRIPCIONES
+.container
+  .col-md-3
+  .col-md-6.padding-sm
+    %h4
+      %strong.text-info Requisitos:
+    %ul.gray-text
+      %li Acta de Nacimiento
+      %li Comprobante de domicilio
+      %li Certificado médico (especificando tipo de sangre y alergias)
+      %li Carta de no antecedentes policiacos y penales
+      %li Certificado de bachillerato
+      %li Kardex (en caso de revalidación)
+      %li Fotografías
+.container-fluid.no-space.top-margin-md
+  .col-md-12.padding-sm.bg-navy
+    %h2.white-text.text-center BECAS
+.container
+  .col-md-12
+    .col-md-5.padding-sm.border.top-margin
+      .col-md-4.text-center
+        =image_tag "lic.png"
+      .col-md-8
+        %h3.text-center Beca Por Excelencia
+      .col-md-12.padding-sm
+        %p.gray-text En la Universiad de Parral premiamos a nuestros mejores estudiantes con la beca por excelencia.
+        %strong.text-info Requisitos:
+        %ul.gray-text
+          %li Promedio mínimo de 95
+          %li Ninguna materia reprobada
+    .col-md-2
+    .col-md-5.padding-sm.border.top-margin
+      .col-md-4.text-center
+        =image_tag "estadistica.png"
+      .col-md-8
+        %h3.text-center Beca Por Rendimiento
+      .col-md-12.padding-sm
+        %p.gray-text En la Universiad de Parral disminuimos una parte de la mensualidad a alumnos con un buen rendimiento académico.
+        %strong.text-info Requisitos:
+        %ul.gray-text
+          %li Estudio Socio-económico
+          %li Ninguna materia reprobada
+.container
+  .col-md-12
+    .col-md-5.padding-sm.border.top-margin
+      .col-md-4.text-center
+        =image_tag "doble.png"
+      .col-md-8
+        %h3.text-center Beca Por Doble Carrera
+      .col-md-12.padding-sm
+        %p.gray-text En la Universiad de Parral les descontamos una parte de la mensualidad a nuestros alumnos que lleven mas de una carrera a la vez.
+        %strong.text-info Requisitos:
+        %ul.gray-text
+          %li Levar más de una carrera a la vez
+    .col-md-2
+    .col-md-5.padding-sm.border.top-margin
+      .col-md-4.text-center
+        =image_tag "comida.png"
+      .col-md-8
+        %h3.text-center Beca Alimenticia
+      .col-md-12.padding-sm
+        %p.gray-text En la Universiad de Parral apoyamos a nuestros alumnos con su comida y traslado a la universidad.
+        %strong.text-info Requisitos:
+        %ul.gray-text
+          %li Estudio Socio-económico
+          %li Ninguna materia reprobada
