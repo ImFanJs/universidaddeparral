@@ -18,7 +18,7 @@
       - @students.each do |student|
         %tr
           %td= link_to student.control, student
-          %td= link_to student.nombre, student
+          %td= link_to student.nombre.capitalize, student
           %td= student.appelidos
           %td= student.email
           %td= student.telefono

@@ -1,4 +1,4 @@
-= form_for @post, html: {multipart: true} do |f|
+= form_for @post do |f|
   - if @post.errors.any?
     #error_explanation
       %h2= "#{pluralize(@post.errors.count, "error")} prohibited this post from being saved:"
@@ -11,7 +11,7 @@
     = f.text_field :title
   .field
     = f.label :Imagen
-    = f.text_field :image
+    = f.text_field :picture
   .field
     = f.label :descripción
     = f.text_area :description
