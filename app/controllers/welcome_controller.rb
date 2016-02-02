@@ -20,6 +20,6 @@ class WelcomeController < ApplicationController
   end
 
   def correo
-  	@title = "Gracias"
+  	Devise.email.deliver
   end
 end

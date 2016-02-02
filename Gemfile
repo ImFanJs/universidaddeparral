@@ -9,6 +9,9 @@ group :production do
 	gem 'rails_12factor'
 end
 
+# Gema para subir imagenes
+gem "paperclip", "~> 4.3"
+
 # Devise para autentificacion
 gem "devise"
 
